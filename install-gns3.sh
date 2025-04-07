@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "installing required packages..."
+sudo pacman -Sy --noconfirm yay
 yay -Sy --noconfirm
 yay -S --noconfirm gns3-server gns3-gui dynamips ubridge qemu docker wireshark-qt vpcs libvirt gperftools tigervnc inetutils
 
